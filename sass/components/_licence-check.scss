@@ -1,0 +1,59 @@
+
+.licence-check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .check-box {
+    position: relative;
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    background-color: white;
+  }
+  .licence-input:checked + .check-box {
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+  .icon-check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+  }
+  .icon-item {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+  .licence-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .licence-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--second-color);
+  }
+  .licence-link {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  .submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,26 @@
+/* Постійнеі клієнти */
+.clients__list {
+    display: flex;
+  }
+  
+  .client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition: color var(--animation);
+    &:hover,
+    &:focus {
+      color: var(--accent);
+      }
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .client__icon {
+    fill: currentColor;
+  }

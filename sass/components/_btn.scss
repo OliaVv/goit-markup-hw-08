@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--white, #ffffff);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--accent, #2196f3);
+    transition: background-color var(--animation);
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+      outline: transparent;
+  }
+  }
+  
+  

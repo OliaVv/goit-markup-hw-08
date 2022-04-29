@@ -1,0 +1,31 @@
+/* Секції */
+
+.feature__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .feature__text {
+    line-height: 1.71;
+    color: var(--second-color, #757575);
+  }
+  .features__list {
+    display: flex;
+  }
+  .feature:not(:last-child) {
+    margin-right: 30px;
+  }
+  .feature__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
+  
+
+/* .feature__icon {
+} */

@@ -1,0 +1,132 @@
+
+/* Modal window */
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transition: opacity var(--animation), visibility var(--animation);
+  }
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .modal-wrapper {
+    position: absolute;
+    width: 530px;
+    height: 580px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  .modal-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+    background-color: white;
+    transition: fill var(--animation);
+    &:hover,
+    &:focus {
+      fill: var(--accent);
+      outline: transparent;
+    }
+  }
+  .icon-close {
+    color: currentColor;
+  }
+  
+  .modal-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.14;
+    text-align: center;
+    color: #212121;
+  }
+  .modal-form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-text {
+    /* position: absolute;
+      top: -10px;
+      left: 0; */
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: var(--second-color);
+  }
+  .form-icon {
+    position: relative;
+    display: block;
+  }
+  .icon-form {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    fill: var(--main-color);
+    transition: fill var(--animation);
+  }
+  .modal-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 11px 32px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-color);
+    transition: border-color var(--animation);
+    &:hover,
+    &:focus {
+      border-color: var(--accent);
+      outline: transparent;
+    }
+    &:hover ~ .icon-form,
+    &:focus ~ .icon-form {
+      fill: var(--accent);
+      outline: transparent;
+    }
+  }
+  .modal-input.textarea {
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    resize: none;
+    outline: transparent;
+  }
+  .textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  @import "./licence-check";

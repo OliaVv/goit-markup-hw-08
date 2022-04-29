@@ -1,0 +1,64 @@
+/* Підвал */
+@import "./subscribe-form";
+
+.footer {
+    background-color: var(--bcg-color-hero, #2f303a);
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+  .footer__conteiner {
+    display: flex;
+  }
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--white, #ffffff);
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+  /* .adr-section {
+      margin-right: 70px;
+  } */
+  .address {
+    font-style: normal;
+  }
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .address__link {
+    line-height: 1.71;
+    color: var(--white, #ffffff);
+  }
+  .address__link--smart {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .join-form {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+  .join-form__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    transition: background-color var(--animation);
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+      outline: transparent;
+    }
+  }
+  
