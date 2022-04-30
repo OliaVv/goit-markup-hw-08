@@ -1,22 +1,47 @@
 /* Шапка */
 .header {
     border-bottom: 1px solid #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    @media screen and (min-width: 768px) {
+      padding-top: 26px;
+      padding-bottom: 26px;      
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 24px; 
+    }
+    &__conteiner {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 767px) {
+      justify-content: space-between;
+      }
+    }
   }
-  .header__conteiner {
-    display: flex;
-    align-items: baseline;
-  }
+  
   .logo {
-    padding-top: 20px;
-    padding-bottom: 20px;
     margin-right: 93px;
     color: var(--black, #000000);
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
   .logo__text {
     color: var(--accent, #2196f3);
+  }
+  .nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;    
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
   .nav-menu {
     display: flex;
@@ -52,9 +77,10 @@
     border-radius: 2px;
   }
   .contact {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
   }
   .contact__item:not(:last-child) {
     margin-right: 30px;

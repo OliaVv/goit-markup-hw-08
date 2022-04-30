@@ -1,0 +1,25 @@
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 11px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    &__icon {
+        width: 40px;
+        height: 40px;
+        &-menu {
+            opacity: 1;
+            fill: var(--main-color);
+        }
+        &-close {
+            opacity: 0;
+        }
+    }
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+}
