@@ -64,11 +64,15 @@
   }
   .nav-menu__link--current {
     display: flex;
+    position: relative;
     flex-direction: column;
     color: var(--accent, #2196f3);
   }
   .nav-menu__link--current::after {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
     content: ' ';
     margin-top: 28px;
     width: 100%;
@@ -78,9 +82,15 @@
   }
   .contact {
     display: none;
+    @media screen and (min-width: 768px) {
+      display: block;    
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
     // display: flex;
     // align-items: center;
-    // margin-left: auto;
+    margin-left: auto;
   }
   .contact__item:not(:last-child) {
     margin-right: 30px;
