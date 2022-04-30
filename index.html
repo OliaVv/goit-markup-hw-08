@@ -25,7 +25,13 @@
     <header class="header">
       <div class="header__conteiner conteiner">
         <a class="header__logo logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
-        <nav>
+        <button class="menu-btn" type="button" aria-label="Open menu">
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-menu" href="./images/icon.svg#icon-menu"></use>
+            <use class="menu-btn__icon-close" href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="nav">
           <ul class="nav-menu list">
             <li class="nav-menu__item"><a class="nav-menu__link nav-menu__link--current" href="./index.html">Студія</a></li>
             <li class="nav-menu__item"><a class="nav-menu__link" href="./portfolio.html">Портфоліо</a></li>
@@ -52,7 +58,7 @@
         </ul>
       </div>
     </header>
-    <main class="page">
+    <!-- <main class="page">
       <section class="hero">
         <div class="hero__conteiner conteiner">
           <h1 class="hero__title">Еффективні рішення для вашого бізнесу</h1>
@@ -306,7 +312,7 @@
         </div>
       </section>
       <!-- Постійні клієнти -->
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="clients__conteiner conteiner">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -348,9 +354,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__conteiner conteiner">
         <div class="footer__section">
           <a class="footer__logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
@@ -422,7 +428,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-wrapper">
@@ -505,7 +511,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
