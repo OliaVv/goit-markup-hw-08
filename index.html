@@ -25,7 +25,9 @@
     <header class="header">
       <div class="header__conteiner conteiner">
         <a class="header__logo logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
-        <button class="menu-btn" type="button" aria-label="Open menu">
+        <button class="menu-btn" type="button" aria-label="Open menu"
+        data-menu-button
+        aria-expanded="false">
           <svg class="menu-btn__icon" width="40" height="40">
             <use class="menu-btn__icon-menu" href="./images/icon.svg#icon-menu"></use>
             <use class="menu-btn__icon-close" href="./images/icon.svg#icon-close"></use>
@@ -58,14 +60,14 @@
         </ul>
       </div>
     </header>
-    <!-- <main class="page">
+    <main class="page">
       <section class="hero">
         <div class="hero__conteiner conteiner">
           <h1 class="hero__title">Еффективні рішення для вашого бізнесу</h1>
           <button class="btn hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <section class="features section">
+      <!-- <section class="features section">
         <div class="features__conteiner conteiner">
           <h2 hidden class="section__title">Особливості</h2>
           <ul class="features__list list">
@@ -115,8 +117,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="jobs section">
+      </section> -->
+      <!-- <section class="jobs section">
         <div class="jobs__conteiner conteiner">
           <h2 class="section__title">Чим ми займаємось</h2>
           <ul class="jobs__list list">
@@ -155,8 +157,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="team-section section">
+      </section> -->
+      <!-- <section class="team-section section">
         <div class="team-section__conteiner conteiner">
           <h2 class="section__title">Наша команда</h2>
           <ul class="comand list">
@@ -310,7 +312,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Постійні клієнти -->
       <!-- <section class="clients section">
         <div class="clients__conteiner conteiner">
@@ -428,7 +430,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>  -->
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-wrapper">
@@ -498,8 +500,9 @@
                 <input class="licence-input" type="checkbox" name="licence" id="licence" />
                 <span class="check-box" role="checkbox">
                   <svg class="icon-check" width="11" height="8">
-                    <use href="./images/icon.svg#licence"></use></svg
-                ></span>
+                    <use href="./images/icon.svg#licence"></use>
+                  </svg>
+                </span>
                 <span class="licence-text"
                   >Погоджуюсь на розсилку та приймаю
                   <a class="licence-link" href="">Умови договору</a></span
@@ -511,7 +514,49 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>   
+    <!-- Mobile menu -->
+    <div class="mobile-menu" data-menu>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list list">
+          <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="">Студія</a></li>
+          <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="">Портфоліо</a></li>
+          <li class="mobile-nav__item item"><a class="mobile-nav__link link" href="">Контакти</a></li>
+        </ul>
+      </nav>
+    <div class="mobile-group">
+      <ul class="mobile-contacts list">
+      <li class="mobile-contacts__item item">
+        <a href="tel:+380961111111" class="mobile-contacts__tel link">+38 096 111 11 11</a></li>
+      <li class="mobile-contacts__item item">
+        <a href="mailto:info@devstudio.com" class="mobile-contacts__mail link">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-socials list">
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">Twitter</a></li>
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">Instagram</a></li>
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">Facebook</a></li>
+      <li class="mobile-socials__item item">
+        <a href="" class="mobile-socials__link link" 
+        target="_blank"
+        rel="noreferrer noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
+
+
+
+
+
