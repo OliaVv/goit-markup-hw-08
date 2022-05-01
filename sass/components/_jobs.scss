@@ -1,6 +1,9 @@
 
 .jobs {
     padding-top: 0;
+    @media  screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   .jobs__list {
     display: flex;
