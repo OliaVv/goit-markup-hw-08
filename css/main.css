@@ -104,8 +104,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1125,7 +1125,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 77px 24px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1137,6 +1137,18 @@ img {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--animation);
+}
+
+@media screen and (min-width: 768) {
+  .portfolio-descr {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-descr {
+    padding: 63px 24px;
+  }
 }
 
 .list-title {
