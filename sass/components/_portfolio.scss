@@ -7,6 +7,11 @@
   .portfolio-img {
     display: block;
   }
+  .portfolio__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   .portfolio__thumb {
     position: relative;
     overflow: hidden;
@@ -43,6 +48,7 @@
     color: var(--second-color, #757575);
   }
   .item-text {
+    flex-grow: 1;
     padding: 20px 24px;
     background: #ffffff;
     border-right: 1px solid #eeeeee;
@@ -50,6 +56,15 @@
     border-left: 1px solid #eeeeee;
   }
   .portfolio__item {
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
     transition: box-shadow var(--animation);
     &:hover,
     &:focus {
