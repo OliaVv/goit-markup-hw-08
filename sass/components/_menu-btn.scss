@@ -1,0 +1,41 @@
+.menu-btn {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 11px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    &__icon {
+        width: 40px;
+        height: 40px;
+        &-menu {
+            opacity: 1;
+            fill: var(--main-color);
+        }
+        &-close {
+            opacity: 0;
+        }
+    &__icon-menu, 
+    &__icon-close {
+        fill: var(--main-color);
+        }
+    &:hover .menu-btn__icon-menu, 
+    &:hover .menu-btn__icon-close {
+        fill: var(--accent);
+    }
+    }
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+    &.is-active .menu-btn__icon-menu {
+        opacity: 0;
+    }
+    &.is-active .menu-btn__icon-close {
+        opacity: 1;
+    }
+}

@@ -42,9 +42,12 @@
     opacity: 0;
   }
   .licence-text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     color: var(--second-color);
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+    }
   }
   .licence-link {
     color: var(--accent);
